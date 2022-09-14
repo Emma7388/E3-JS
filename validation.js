@@ -87,7 +87,7 @@ function eleccionPizza(e) {
     numeroId.value === null ||
     isNaN(numeroId.value)
   ) {
-    errorMessage.push("Ah elegido un Identificador de pizza incorrecto");
+    errorMessage.push("Identificador de pizza incorrecto, intente");
     error.innerHTML = errorMessage; // MENSAJE DE ERROR 1
   } else {
     errorMessage.pop();
@@ -106,15 +106,13 @@ function eleccionPizza(e) {
       container.innerHTML = `<img class="pizzaImg" src=${pizzaChoice.img} alt="">`;
 
       numeroId.value = "";
-
-      console.log("control de Validacion Ok");
     }
   }
+  console.log("control de funcionamiento Ok");
 }
 
 const init = () => {
   buttonSubmit.addEventListener("click", eleccionPizza);
 };
 init();
-
 
