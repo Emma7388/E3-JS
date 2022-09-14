@@ -102,7 +102,7 @@ function eleccionPizza(e) {
       card.classList.add("card");
       pizzaName.innerHTML = pizzaChoice.nombre;
       pizzaPrice.innerHTML = `$ ${pizzaChoice.precio}`;
-      ingMenu.innerHTML = `Ingredientes base: ${pizzaChoice.ingredients}`;
+      ingMenu.innerHTML = `Ingredientes: ${pizzaChoice.ingredients}`;
       container.innerHTML = `<img class="pizzaImg" src=${pizzaChoice.img} alt="">`;
 
       numeroId.value = "";
